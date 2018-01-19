@@ -1,0 +1,80 @@
+/*type selectors*/
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: times, arial, sans-serif;
+	background-image: url("tanja-heffner-263410.jpg");  
+}
+h1{
+	margin: 0;
+}
+h2, h3, h4 {
+	color: green;
+}
+/*class selectors*/
+.container{
+	width: 50em;
+	margin: auto;
+}
+.nav{
+	background: grey;
+	padding: 1em 2em
+	
+}
+.intro{
+	font-size: 1.2em;
+	color: gray
+}
+
+.nav a:hover{
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+
+}
+/*IDselectors*/
+#header, #footer{
+	background-color: black;
+	color: white;
+	padding: 2em
+}
+#main{
+	margin: 1em 3em;
+	background-image: url("tanja-heffner-263410.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+/*Universal selectors*/
+/**{
+	border:2em yellow dashed;
+}*/
+/*descendant selectors*/
+.nav li{
+	display: inline;
+	margin-right: 2em;
+}
+.nav li a{
+	color: white;
+}
+/*child selectors*/
+.nav li > a{
+	text-decoration: none;
+}
+/*adjacent sibling selectors*/
+h3 + h4{
+	background-color: orange;
+}
+h3 + p{
+	border:2px yellow solid;
+}
+/* link pseudo-class selector*/
+a:link{color: green;}
+a:visited{color:orange}
+a:focus{color:green;}
+a:hover{color:lime;}
+a:active{color:pink;}
+
